@@ -1,0 +1,25 @@
+[package]
+name = "onehot"
+version = "0.1.0"
+license = "MIT"
+edition = "2018"
+authors = ["gahag <gabriel.s.b@live.com>"]
+description = "One-hot encoding trait and proc macro for auto deriving"
+repository = "https://github.com/gahag/onehot"
+readme = "crates-io.md"
+keywords = [ "onehot", "encoding", "onehot-encoding", "hot-encoding", "machine-learning" ]
+categories = [ "science", "encoding" ]
+
+[dev-dependencies]
+onehot-derive = { version = "0.1", path = "../onehot-derive" }
+
+[dependencies]
+onehot-derive = { version = "0.1", path = "../onehot-derive", optional = true }
+bitmatrix = { version = "0.1", optional = true }
+
+[features]
+derive = ["onehot-derive"]
+matrix = ["bitmatrix"]
+
+[package.metadata.docs.rs]
+features = [ "derive", "matrix" ]

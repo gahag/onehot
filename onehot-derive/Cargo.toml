@@ -1,0 +1,20 @@
+[package]
+name = "onehot-derive"
+version = "0.1.0"
+license = "MIT"
+edition = "2018"
+authors = ["gahag <gabriel.s.b@live.com>"]
+description = "Automatic derivation for the OneHot trait"
+repository = "https://github.com/gahag/onehot"
+keywords = [ "onehot", "encoding", "onehot-encoding", "hot-encoding", "machine-learning" ]
+categories = [ "science", "encoding" ]
+
+[lib]
+proc-macro = true
+
+[dev-dependencies]
+onehot = { version = "0.1", path = "../onehot", features = ["derive"] }
+
+[dependencies]
+syn = "1.0"
+quote = "1.0"
