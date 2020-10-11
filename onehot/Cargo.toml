@@ -6,7 +6,6 @@ edition = "2018"
 authors = ["gahag <gabriel.s.b@live.com>"]
 description = "One-hot encoding trait and proc macro for auto deriving"
 repository = "https://github.com/gahag/onehot"
-readme = "crates-io.md"
 keywords = [ "onehot", "encoding", "onehot-encoding", "hot-encoding", "machine-learning" ]
 categories = [ "science", "encoding" ]
 
