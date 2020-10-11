@@ -12,8 +12,8 @@ categories = [ "science", "encoding" ]
 [lib]
 proc-macro = true
 
-[dev-dependencies]
-onehot = { version = "0.1", path = "../onehot", features = ["derive"] }
+# [dev-dependencies]
+# onehot = { version = "0.1", path = "../onehot", features = ["derive"] }
 
 [dependencies]
 syn = "1.0"

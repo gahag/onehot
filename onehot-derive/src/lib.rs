@@ -14,7 +14,7 @@ use syn;
 /// The auto derive macro for OneHot.
 ///
 /// Enums and structs:
-/// ```
+/// ```rust,ignore
 /// # use onehot::OneHot;
 /// #[derive(OneHot)]
 /// pub enum SimpleEnum {
@@ -32,7 +32,7 @@ use syn;
 /// ```
 ///
 /// Structs can also be tuple and/or generic:
-/// ```
+/// ```rust,ignore
 /// # use onehot::OneHot;
 /// #[derive(OneHot)]
 /// pub struct SimpleGenericStruct<'a, T: OneHot + 'a>(
